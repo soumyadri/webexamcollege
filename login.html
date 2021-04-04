@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-  </head>
-  <body>
-    <h1>Login</h1>
-    
+<head>
+    <meta charset="UTF-8">
+    <title>Online Examination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='login.html'><img class="logo-navbar" src="study-logo.jpg" alt=""></a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><a href="register.html"><button class='loginbtn' style="width:auto;">Register</button></a></li>
+                </ul>
+            </nav>
+        </div>
+         <!-- onclick="document.getElementById('login-form').style.display='block'"  -->
+          <!-- id='login-form' -->
+        <div class='login-page'>
+            <div class="form-box">
+              <h3 class="h3-login-header">LOGIN</h3>
+              <form id='login' class='input-group-login'>
+               <input type='text'class='input-field'placeholder='Email Id' required >
+      		     <input type='password'class='input-field'placeholder='Enter Password' required>
+      		     <input type='checkbox'class='check-box'><span>Remember Password</span>
+      		     <button type='submit'class='submit-btn'>Log in</button>
+      		    </form>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
