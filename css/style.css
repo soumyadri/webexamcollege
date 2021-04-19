@@ -1,14 +1,76 @@
-/* *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}*/
+*{
+ 
+} 
 body{
    background-color: #D8D8D9; 
    /*   background-color: #D8D8D9;  */
 
+   padding: 0;
+   margin: 0;
+ 
+
+}
+.chatbox_button{
+ 
+/* position: fixed; */
+display: flex;
+flex-direction: row;
+justify-content: right;
+/* transform: translate(-250px,0); */
+} 
+
+.chatbox_button a{
+  color: #fff;
+  font-size: 20px;
+  font-family: ""sans-serif;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(0, 0,0,0.4);
+  display: block;
+  width:100px;
+  text-align: right;
+  transition: 1s;
+  transition-property: transform;
+}
+.chatbox_button a:hover{
+  transform: translate(50px,0);
+  color: crimson;
+  font-weight: 600;
 }
 
+@media (max-width:1000px) {
+  .chatbox_button{
+ 
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* transform: translate(-250px,0); */
+    } 
+    
+    .chatbox_button a{
+      color: #fff;
+      font-size: 15px;
+      font-family: ""sans-serif;
+      text-decoration: none;
+      margin: 2px;
+      padding: 10px;
+      border-radius: 50px;
+      background-color: rgba(0, 0,0,0.4);
+      display: block;
+      width:80px;
+      text-align: right;
+      transition: 1s;
+      transition-property: transform;
+    }
+    .chatbox_button a:hover{
+      transform: translate(30px,0);
+      color: crimson;
+      font-weight: 600;
+    }
+}
 
 /* icon part */
 #main_icon_img{
@@ -827,12 +889,15 @@ position: relative;
   text-decoration: none;
   color: crimson;
 }
+
 @media (max-width:1000px) {
   .footer-section{
     background-color: #1d1d1d;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 5x;
     color: #D8D8D9;
+    
   }
   .footer_section_text_div{
     /* margin-left: 45px; */
@@ -851,6 +916,7 @@ position: relative;
     color: #D8D8D9;
     padding: 5px;
     text-align: center;
+    
   }
   .footer_section_link_icon:hover{
     text-decoration: none;
