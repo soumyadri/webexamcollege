@@ -1,0 +1,63 @@
+function RegisterDetails (registerDetailFirstName , registerDetailLastName,
+    registerDetailPhoneNo,registerDetailLanNo,registerDetailDOB,registerDetailAddress1,registerDetailAddress2,
+    registerDetailCity,registerDetailDistrict,registerDetailZip,registerDetailClass,isterDetailSection,registerDetailBatch){
+
+
+    // this.registerDetailFirstName= registerDetailFirstName;
+    this.registerDetailLastName =registerDetailLastName;
+    this.registerDetailPhoneNo = registerDetailPhoneNo;
+    this.registerDetailLanNo = registerDetailLanNo;
+    this.registerDetailDOB = registerDetailDOB;
+    this.registerDetailAddress1 = registerDetailAddress1;
+    this.registerDetailAddress2 = registerDetailAddress2;
+    this.registerDetailCity = registerDetailCity;
+    this.registerDetailDistrict = registerDetailDistrict;
+    this.registerDetailZip = registerDetailZip;
+    this.registerDetailClass = registerDetailClass;
+    this.registerDetailSection = registerDetailSection;
+    this.registerDetailBatch = registerDetailBatch;
+
+
+}
+
+
+
+function registerDetailsSubmit(){
+    // console.log("Hello World");
+    // event.preventDefault();
+    // var registerDetailFirstName = document.getElementById("registerDetailFirstName").value;
+    // console.log(registerDetailFirstName);
+    var registerDetailLastName= document.getElementById("registerDetailLastName").value;
+    console.log(registerDetailLastName);
+    // var registerDetailEmail= document.getElementById("registerDetailEmail").value;
+    // var registerDetailPassword = document.getElementById("registerDetailPassword").value;
+    
+    var registerDetailPhoneNo = document.getElementById("registerDetailPhoneNo").value;
+    var registerDetailLanNo= document.getElementById("registerDetailLanNo").value;
+    var registerDetailDOB= document.getElementById("registerDetailDOB").value;
+    var registerDetailAddress1 = document.getElementById("registerDetailAddress1").value;
+
+    var registerDetailAddress2 = document.getElementById("registerDetailAddress2").value;
+    var registerDetailCity= document.getElementById("registerDetailCity").value;
+    var registerDetailDistrict= document.getElementById("registerDetailDistrict").value;
+    var registerDetailZip = document.getElementById("registerDetailZip").value;
+
+    var registerDetailClass = document.getElementById("registerDetailClass").value;
+    var registerDetailSection= document.getElementById("registerDetailSection").value;
+    var registerDetailBatch= document.getElementById("registerDetailBatch").value;
+
+    var registerDetailConstractor = new  RegisterDetails (registerDetailFirstName , registerDetailLastName,
+        registerDetailPhoneNo,registerDetailLanNo,registerDetailDOB,registerDetailAddress1,registerDetailAddress2,
+        registerDetailCity,registerDetailDistrict,registerDetailZip,registerDetailClass,isterDetailSection,registerDetailBatch)
+
+        console.log(registerDetailConstractor);
+    
+    
+
+    }
+
+
+
+// document.getElementById("formRegister").addEventListener("click", function(event){
+//     event.preventDefault()
+// });
