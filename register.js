@@ -19,7 +19,7 @@ function funcRegister(){
         console.log(registerData);
         //console.log(JSON.stringify(registerData));
         localStorage.setItem("Registration",JSON.stringify(registerData));
-        window.location.href = "login.html";
+        window.location.href = "register_detail.html";
         //e.preventDefault()
     } else {
         alert("Something is Wrong There")
