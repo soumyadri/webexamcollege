@@ -17,7 +17,8 @@ function funcTeacherLogin(){
         }
     }
     if(f==1){
-        alert("Success");
+        //alert("Success");
+        window.location.href = "questionType.html";
     } else {
         event.preventDefault()
         alert("Not Correct");

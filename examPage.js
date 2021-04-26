@@ -11,6 +11,7 @@ function getQuestion(){
     getQuestionExam();
   }, 1700);
 }
+
 function getQuestionExam() {
     console.log(obj);
     for(var i=0; i<obj.length; i++){

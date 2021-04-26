@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+.QuestionTypeManage {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+}
+.QuestionTypeManage > div {
+  margin: 5%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 22px;
+}
