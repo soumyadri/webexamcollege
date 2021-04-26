@@ -7,7 +7,7 @@ function funcLogin(){
     console.log(loginLocalstorage)
     if(loginEmail == loginLocalstorage.emailRegister && loginPassword == loginLocalstorage.passwordRegister){
         alert("Login Successful");
-        window.location.href = "index.html";
+        window.location.href = "dashboard.html";
     } else {
         alert("Login Error")
         event.preventDefault()
