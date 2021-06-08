@@ -1,6 +1,13 @@
 var addQuestionExam = document.getElementById("addQuestionExam");
-var url = "https://web-exam-college.herokuapp.com/math";
+
+var url = new URL(window.location.href);
+var sub = url.searchParams.get("q");
+
+var url = "https://web-exam-college.herokuapp.com/"+sub;
 var obj;
+
+var todaySubject = document.getElementById("todays-subject");
+todaySubject.innerHTML="Subject : " + sub;
 
 fetch(url)
   .then(res => res.json())
@@ -9,7 +16,7 @@ fetch(url)
 function getQuestion(){
   setTimeout(() => {
     getQuestionExam();
-  }, 1700);
+  }, 1500);
 }
 
 function getQuestionExam() {

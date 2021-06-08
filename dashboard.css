@@ -31,11 +31,27 @@
   background-color: rgb(255, 72, 72);
   color: rgb(255, 255, 255);
   position: relative;
-  bottom: 30px;
+  top: 80px;
   border: 0;
   box-shadow: 1px 1px 8px rgb(255, 72, 0);
 }
 .dashboardContent > button:hover {
   background-color: rgb(255, 72, 80);
-  padding: 1% 4.5%;
+  transform: scale(1.1);
+}
+.chooseSubject {
+  padding: 0.5%;
+  border-radius: 8px;
+  background-color: rgb(166, 255, 255);
+  position: relative;
+  left: 200px;
+  margin: 1%;
+  font-size: 18px;
+}
+.subjectLabel {
+  font-size: 24px;
+  font-weight: 600;
+  color: rebeccapurple;
+  position: relative;
+  left: 200px;
 }
