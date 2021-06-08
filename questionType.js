@@ -39,7 +39,8 @@ function QuestionSubmit(){
 
 function QuestionDelete(){
     var QuestionId = document.getElementById("QuestionId").value;
-    var SubjectAdd = document.getElementById("SubjectAdd").value;
+    var SubjectAdd = document.getElementById("SubjectDelete").value;
+    console.log(SubjectAdd, QuestionId);
     fetch('https://web-exam-college.herokuapp.com/' + SubjectAdd + "/" + QuestionId, {
         method: 'DELETE',
     })

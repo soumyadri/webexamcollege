@@ -12,7 +12,7 @@ function funcTeacherLogin(){
     for(var i=0; i<obj.length; i++){
         if(obj[i].email == loginTeacherEmail && obj[i].password == loginTeacherPassword){
             f=1;
-            //alert("Login Successful");
+            alert("Login Successful");
             break;
         }
     }
@@ -25,6 +25,6 @@ function funcTeacherLogin(){
     }
 }
 
-document.getElementById("myAnchor").addEventListener("click", function(event){
+document.getElementById("btn-control").addEventListener("click", function(event){
     event.preventDefault()
 });

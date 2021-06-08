@@ -63,8 +63,22 @@ function registerDetailsSubmit(){
     else {
         //e.preventDefault()
         localStorage.setItem("registerDetail",registerDetailJsonData);
+        console.log(registerDetailJsonData);
+        fetch('https://web-exam-college.herokuapp.com/student', {
+            method: 'post',
+            headers: {'Content-Type': 'application/json'}, 
+            body: JSON.stringify(registerDetailConstractor)
+        })
+        .then(response => console.log(response))
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+
         alert("Success");
-        window.location.href = "/login.html";
+        //window.location.href = "login.html";
     }
 
 }

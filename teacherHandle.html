@@ -28,6 +28,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <link rel="stylesheet" href="questionType.css" />
   </head>
   <body>
     <section class="top_bar">
@@ -92,66 +93,47 @@
           </div>
         </nav>
       </section>
-      <section class="Form my-4 mx-4">
-        <div class="container">
-          <div class="gap_purpose"></div>
-  
-          <div class="row no-gutters from_row_div">
-            <div class="col-lg-5 px-5 pt-5">
-              <img src="https://sparshpublication.com/wp-content/uploads/2019/03/teacher.png" class="img-fluid" alt="" />
-            </div>
-            <div class="col-lg-7 px-5 pt-5">
-              <h1 class="font-weight-bold py-3">At academia!</h1>
-              <h4 class="">Teacher sign into your account</h4>
-              <form id="formInput">
-                <div class="form-row">
-                  <div class="col-lg-7">
-                    <input
-                      id="loginTeacherEmail"
-                      type="email"
-                      placeholder="@email address"
-                      class="form-control my-3 p-4 form_border"
-                    />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-lg-7">
-                    <input
-                      id="loginTeacherPassword"
-                      type="password"
-                      placeholder="********"
-                      class="form-control my-3 p-4"
-                    />
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-lg-7">
-                    <button onclick="funcTeacherLogin()" id="btn-control" class="btn btn1 mt-3 mb-5">
-                      Login
-                    </button>
-                  </div>
-                </div>
-                <!-- <div class="form-row">
-                  <div class="col-lg-7">
-                    <a href="#" class="password_link">Forgot password?</a>
-                  </div>
-                </div> -->
-                <!-- <div class="form-row">
-                  <div class="col-lg-7">
-                    <p>
-                      Don't have an account?
-                      <a href="register.html" class="password_link"
-                        >Register now</a
-                      >
-                    </p>
-                  </div>
-                </div> -->
-              </form>
-            </div>
-          </div>
+      
+      <div class="QuestionTypeManage">
+        <div class="QuestionAdd">
+          <h3>To add Teacher press this</h3>
         </div>
-      </section>
-      <section class="footer_part">
+      </div>
+      <div class="visibleAdd">
+        <label for="">First Name</label>
+        <input type="text" placeholder="First Name" id="firstNameAdd" />
+        <br />
+        <label for="">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lastNameAdd" />
+        <br />
+        <label for="">Email</label>
+        <input type="text" placeholder="Email" id="emailAdd" />
+        <br />
+        <label for="">Gender</label>
+        <input type="text" placeholder="Gender" id="genderAdd" />
+        <br />
+        <label for="">Password</label>
+        <input type="text" placeholder="Password" id="passwordAdd" />
+        <br />
+        <button onclick="TeacherSubmit()">Submit</button>
+      </div>
+      <br />
+      <div class="QuestionDelete">
+        <h3>To Delete Teacher press this</h3>
+      </div>
+      <br />
+      <div class="visibleDelete">
+        <label for="">ID</label>
+        <input
+          type="text"
+          placeholder="Id of the teacher you want to delete"
+          id="TeacherId"
+        />
+        <br />
+        <button onclick="TeacherDelete()">Delete</button>
+      </div>
+
+      <section class="footer_part" style="margin-top: 0">
         <div class="container_fluid">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 footer_part_div">
@@ -205,7 +187,7 @@
           </div>
         </div>
       </section>
-  
+      
       <footer class="footer-section">
         <div class="container-fluid">
           <div class="row">
@@ -251,6 +233,6 @@
         </div>
       </footer>
     </body>
-    <script src="teacherLogin.js"></script>
+    <script src="teacherHandle.js"></script>
   </body>
 </html>
