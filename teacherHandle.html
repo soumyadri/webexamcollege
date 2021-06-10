@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <link rel="stylesheet" href="questionType.css" />
+    <link rel="stylesheet" href="teacherHandle.css" />
   </head>
   <body>
     <section class="top_bar">
@@ -94,39 +94,45 @@
         </nav>
       </section>
       
-      <div class="QuestionTypeManage">
+      <div class="QuestionTypeManage teacherHandleMainContainer">
         <div class="QuestionAdd">
-          <h3>To add Teacher press this</h3>
+          <h3>Add Yourself</h3>
         </div>
       </div>
-      <div class="visibleAdd">
-        <label for="">First Name</label>
-        <input type="text" placeholder="First Name" id="firstNameAdd" />
+      <div class="visibleAdd teacherHandleVisibleContainer">
+        
+        <label for="">First Name:</label>
+        <input type="text" placeholder="first Name" id="firstNameAdd" />
         <br />
-        <label for="">Last Name</label>
-        <input type="text" placeholder="Last Name" id="lastNameAdd" />
+        <label for="">Last Name:</label>
+        <input type="text" placeholder="last Name" id="lastNameAdd" />
         <br />
-        <label for="">Email</label>
-        <input type="text" placeholder="Email" id="emailAdd" />
+        <label for="">Email:</label>
+        <input type="text" placeholder="@email address" id="emailAdd" />
         <br />
-        <label for="">Gender</label>
-        <input type="text" placeholder="Gender" id="genderAdd" />
+        <label for="">Gender:</label>
+        <input type="text" placeholder="gender" id="genderAdd" />
         <br />
-        <label for="">Password</label>
-        <input type="text" placeholder="Password" id="passwordAdd" />
+        <label for="">Password:</label>
+        <input type="text" placeholder="password" id="passwordAdd" />
         <br />
         <button onclick="TeacherSubmit()">Submit</button>
+        <hr>
       </div>
+      
       <br />
-      <div class="QuestionDelete">
-        <h3>To Delete Teacher press this</h3>
+      <div class="QuestionDelete teacherHandleQuestionDeleteContainer">
+        <h3>To delete teacher, please enter teacher ID</h3>
+        <hr>
+        <p class="teacherHandlePara">$$$$</p>
       </div>
+       
       <br />
-      <div class="visibleDelete">
-        <label for="">ID</label>
+      <div class="visibleDelete teacherHandleVisibleDelete">
+        <label for="">ID Number:</label>
         <input
           type="text"
-          placeholder="Id of the teacher you want to delete"
+          placeholder="id number"
           id="TeacherId"
         />
         <br />
@@ -142,12 +148,12 @@
                 Academist is dedicated to constant learning & knowledge sharing.
               </p>
               <a href="" class="fas fa-map-marker-alt footer_part_link">
-                743263 Ramakrishna Sarani
+                700066 CollegeRocks Sector
               </a>
               <!-- <i class="fas fa-map-marker-alt"></i> -->
               <p></p>
               <a href="" class="fas fa-phone-volume footer_part_link">
-                +91 8538076381</a
+                +91 1800-0630-2030</a
               >
               <!-- <i class="fas fa-phone-volume"></i> -->
               <p></p>
@@ -162,15 +168,15 @@
   
               <a href="" class="footer_part_link_text_1"> Leadership Skill</a
               ><br />
-              <a href="" class="footer_part_link_text_2">Pro Barje</a>
+              <a href="" class="footer_part_link_text_2">Jeff Bezos</a>
               <p></p>
               <a href="" class="footer_part_link_text_1"> Confidence Building</a
               ><br />
-              <a href="" class="footer_part_link_text_2">Jayee Dasu</a>
+              <a href="" class="footer_part_link_text_2">Elone Musk</a>
               <p></p>
               <a href="" class="footer_part_link_text_1"> Personality Buliding</a
               ><br />
-              <a href="" class="footer_part_link_text_2">Ana Bonggirl</a>
+              <a href="" class="footer_part_link_text_2">Mukesh Ambani</a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 footer_part_div">
               <a href="" class="footer_part_headings">Support</a>
