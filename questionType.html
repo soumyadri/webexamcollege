@@ -124,10 +124,12 @@
       <label for="">Answer</label>
       <input type="text" placeholder="Answer" id="Answer" />
       <br />
-      <button onclick="QuestionSubmit()">Submit</button>
+      <button class="buttonHandleQuestionType" onclick="QuestionSubmit()">
+        Submit
+      </button>
     </div>
     <br />
-    <hr class="hrDivider" color="yellowgreen">
+    <hr class="hrDivider" color="yellowgreen" />
     <div class="QuestionDelete">
       <h3>To delete question press this</h3>
     </div>
@@ -141,13 +143,11 @@
       </select>
       <br />
       <label for="">ID</label>
-      <input
-        type="text"
-        placeholder="Id, you want to delete"
-        id="QuestionId"
-      />
+      <input type="text" placeholder="Id, you want to delete" id="QuestionId" />
       <br />
-      <button onclick="QuestionDelete()">Delete</button>
+      <button class="buttonHandleQuestionType" onclick="QuestionDelete()">
+        Delete
+      </button>
     </div>
 
     <section class="footer_part">
