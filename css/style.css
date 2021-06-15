@@ -729,6 +729,7 @@ position: relative;
   padding-left: 30px;
   padding-top:30px;
   font-size: 80px;
+  cursor: pointer;
 
 }
 @media (max-width:1000px){
