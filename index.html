@@ -44,10 +44,10 @@
                         <a class="nav-link top_bar_text" href=""> About Us</a>
                     </li>
                      <li class="nav-item ">
-                        <a class="nav-link top_bar_text" href="login.html"> <img class="top_bar_text_login_img" src="login_img.png" alt="login_img"> Login</a>
+                        <a class="nav-link top_bar_text" href="login.html" style="display: flex;"> <img class="top_bar_text_login_img" src="login_img.png" alt="login_img"><p id="checkLogin">Login</p></a>
                     </li>
                      <li class="nav-item ">
-                      <a class="nav-link " id="top_bar_text_registar"href="register.html" ><img class="top_bar_text_registar_img" src="registar_img.png" alt="registar_img">Register</a>
+                      <div onclick="registerLogout()" class="nav-link " id="top_bar_text_registar" style="display: flex;"><img class="top_bar_text_registar_img" src="registar_img.png" alt="registar_img"><p id="checkRegister">Register</p></div>
                     </li>
 
                   </ul>
@@ -632,6 +632,7 @@
 
 </footer>
 
-
 </body>
+
+<script src="index.js"></script>
 </html>
