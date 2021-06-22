@@ -55,3 +55,10 @@
   position: relative;
   left: 200px;
 }
+.dashboard_h3{
+/* color: aliceblue; */
+padding-left: 60px;
+}
+.dashboard_h3_span{
+color: aliceblue;
+}

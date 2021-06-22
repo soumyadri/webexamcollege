@@ -854,6 +854,17 @@ position: relative;
   color: crimson;
   text-decoration: none;
 }
+.footer_part_link_text_4{
+  font-size: 17px;
+  color: aliceblue;
+  margin-left: 45px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.footer_part_link_text_4:hover{
+  color: crimson;
+  text-decoration: none;
+}
 @media (max-width:1000px){
   .footer_part_div{
     padding-top: 30px;
