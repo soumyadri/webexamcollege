@@ -1,3 +1,13 @@
+// ExamPage name of student
+var jsonData = JSON.parse(localStorage.getItem("registerDetail"));
+
+var studentName = jsonData.registerDetailFirstName ;
+
+var gettingName = document.getElementById("gettingName");
+gettingName.innerHTML = "Hello, " + studentName ;
+
+
+
 var addQuestionExam = document.getElementById("addQuestionExam");
 
 var url = new URL(window.location.href);
